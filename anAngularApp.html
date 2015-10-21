@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>jakob</title>
+  <link rel="stylesheet" type="text/css" href="anAngularApp.css">
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/app.js"></script>
+</head>
+
+<body ng-app="enApp" ng-controller="appController as appCtrl">
+  <div>
+    FirstDiv
+    {{greet() + getItem(0)}}
+  </div>
+  <tomte class="theText" ng-repeat="item in model"></tomte>
+  <div>
+    LaswwtDiv
+    {{greet()}}
+  </div>
+  <div ng-include="'testItem.html'">asd</div>
+</body>
+
+</html>
+
